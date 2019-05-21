@@ -1,0 +1,66 @@
+@import url(font-awesome.min.css);
+/* this is the initially chosen googleapis */
+@import url("https://fonts.googleapis.com/css?family=Vollkorn:400,400italic,900");
+
+
+/* POSITION */
+#go-up ul.actions {
+	position: fixed;
+	right: 0.7930214115781126vw; /*=10px in computer screen*/
+	bottom:0.7930214115781126vh;
+	z-index: 1000;
+	width:4.583359375vw;
+	height:8.583359375vh;
+	color: transparent;
+}
+
+/* ICON STYLING */
+#go-up ul.actions li {
+	
+	border-radius: 100px;
+	padding: 0 0 0 0rem;
+	vertical-align: middle;
+	width:4.583359375vw;
+	height:4.583359375vh;
+	/* height:9.61767213114754vh; */
+	}
+	
+  #go-up ul.actions li a {
+		background: rgba(255,255,255,0.9);
+		border-radius: 100%;
+		width:4.583359375vw;
+		height:9.61767213114754vh;
+		}
+
+		
+#go-up ul.actions:hover li {
+	transition: all 0.3s ease-in-out;
+	background: none;
+	
+	box-shadow: inset #eeeeee;
+}
+	
+
+@media screen and (max-width: 980px) {
+
+	#go.up {
+	display:none;
+}
+@media screen and (max-width: 320px) {
+
+	#go.up {
+	display:none;
+}
+
+
+		@media screen and (max-width: 480px) {
+      /*style everything exept class fixed*/
+					ul.actions:not(.fixed) {
+						-moz-flex-direction: column;
+						-webkit-flex-direction: column;
+						-ms-flex-direction: column;
+						flex-direction: column;
+						margin-left: 0;
+						width: 100% !important;
+					}
+			}
